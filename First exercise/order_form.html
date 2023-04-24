@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+</head>
+<body style="background: url(./images/chopsuey.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+  <center><div>
+
+    <!-- <p><a href="index.html">Home</a></p> -->
+    
+    <!-- <button value="&#x2190;" onclick="history.go(-1)">&#x2190;</button> -->
+    
+    <a style="color: rgb(233, 221, 54);" href="#" onclick="history.go(-1); return false;">&#x2190; Go Back</a><br><br>
+
+  </div></center>
+  <!-- Order Form -->
+  <form action="#" style="display: block; margin: auto; width: 300px;background: linear-gradient(rgba(255, 228, 196, 0.664), rgba(128, 128, 128, 0.918));">
+    <fieldset>
+      <center><legend><h4>Fill to order</h4></legend></center>
+
+      <label for="name">Name: </label>
+      <input style="width: 100%" type="text" name="name" id="name" placeholder="Type your name" required><br>
+
+      
+      <br>
+      
+      <label for="email">Email: </label>
+      <input style="width: 100%;" type="email" name="email" id="email" placeholder="Type your email">
+      
+      <br><br>
+      <label for="contact">Contact: </label>
+      <input style="width: 100%" type="text" name="contact" id="contact" placeholder="Type your contact number" required><br><br>
+      
+      <label for="address">Address: </label>
+      <textarea style="width: 100%" name="address" id="address" placeholder="Type your address" required></textarea><br><br>
+      <!-- <p>Please check your order: </p>
+      <input type="checkbox" name="adobo_order" id="adobo_order">
+      <label for="adobo_order">Adobong Manok</label><br>
+
+      <input type="checkbox" name="chopsuey_order" id="chopsuey_order">
+      <label for="chopsuey_order">Chopsuey</label><br>
+
+      <input type="checkbox" name="kare_order" id="kare_order">
+      <label for="kare_order">Kare-Kare</label><br><br> -->
+
+    
+      <label for="order">Please check your order:</label><br>
+        <input type="checkbox" name="order" id="adobo_order" value="adobo_order">
+          <label for="adobo_order">Adobong Manok</label> 
+            <input style="width: 20%;" type="number" name="adobo_order" id="adobo_no_order" min="0"><label for="adobo_no_order">Servings</label><br>
+
+      <input type="checkbox" name="order" id="chopsuey_order" value="chopsuey_order">
+        <label for="chopsuey_order">Chopsuey</label>
+          <input style="width: 20%;" type="number" name="chopsuey_order" id="chopsuey_no_order" min="0"><label for="chopsuey_no_order">Servings</label><br>
+
+      <input type="checkbox" name="order" id="kare_order" value="kare_order">
+        <label for="kare_order">Kare-Kare</label>
+          <input style="width: 20%;" type="number" name="kare_order" id="kare_no_order" min="0"><label for="kare_no_order">Servings</label><br><br>
+
+      <!-- <label for="order">Please select your order: </label>
+      <select style="width: 100%" name="order" id="order">
+        <option value="">Select</option>
+        <option value="adobo_order">Adobong Manok</option>
+        <option value="chopsuey_order">Chopsuey</option>
+        <option value="kare_order">Kare Kare</option>
+      </select><br><br> -->
+
+
+      <label for="comment">Do you have any request or suggestion?</label><br>
+      <textarea style="width: 100%" name="comment" id="comment" rows="5" placeholder="I want..."></textarea><br>
+      <br>
+      <center><input type="submit" value="Order"></center>
+
+
+
+
+
+
+
+    </fieldset>
+
+
+
+
+  </form>
+
+
+
+
+
+
+
+
+</body>
+</html>
